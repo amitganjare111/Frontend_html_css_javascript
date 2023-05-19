@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS EFFECT Que 2</title>
+    <style> 
+        .first {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          position: relative;
+          animation-name: example;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+        }
+        
+        @keyframes example {
+          0%   {background-color:red; left:0px; top:0px;}
+          25%  {background-color:yellow; left:500px; top:0px;}
+          50%  {background-color:blue; left:500px; top:200px;}
+          75%  {background-color:green; left:0px; top:200px;}
+          100% {background-color:red; left:0px; top:0px;}
+        }
+
+        .bb{
+            margin:200px 0px 0px 20px;
+        }
+        .pagination {
+            display: inline-block;
+         }
+
+       .pagination a { 
+         color: black;
+         float: left;
+         padding: 8px 16px;
+         text-decoration: none;
+         }
+
+       .pagination a.active {
+         background-color: #4CAF50;
+         color: white;
+        }
+
+       .pagination a:hover:not(.active) {background-color: #ddd;}
+
+</style>
+</head>
+<body>
+    <div>
+    <h1>CSS Animation</h1>
+    <h3>Use CSS animations (name,duration,iteration-count & delay) and 
+        paginations(Hoverable,with and without spaces).</h3>
+    <div class="first"></div>
+    </div>
+<div class="bb">
+       <h2>Active and Hoverable Pagination</h2>
+
+       <p>Move the mouse over the numbers.</p>
+
+       <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="#">1</a>
+          <a class="active" href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+      </div>
+</div>
+</body>
+</html>

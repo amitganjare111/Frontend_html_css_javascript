@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> javaScript  Basics</title>
+    </head>
+
+    <body>
+        
+        <button id="btn">click to sort Array</button>
+
+         <!-- <button onclick=" return sorting()"> click to sort</button> -->
+         <button onclick="loop()">click to run for loop </button>
+         
+         <h2 id="sort"></h2>
+         <h3 id="data"></h3>
+
+  <!--------------------------Que.2----------------------------------------------->
+        <script>
+
+           document.getElementById("btn").addEventListener("click", sorting);
+           function sorting()
+           {
+            var arr=["apple","mango","banana","pineapple","orange"]
+            arr.sort().reverse();
+           document.getElementById('sort').innerText=arr;
+         }
+/*-------------------------------Que.3------------------------------------------*/
+         function loop(){
+           var arr=[2,5,4,8,9,6,3,7,8,5,12]
+            for (var i = 0; i < arr.length; i++)
+             {
+              document.writeln(arr[i]+" ");
+             }
+         }
+/*--------------------------------Que.4-----------------------------------------*/
+         var person = new Object();
+   
+          person.firstName = "Amit";
+          person.lastName = "Ganjare"; 
+          person.age = 25;
+          person.fullData = function(){
+            return this.firstName+ "  "+this.lastName+ " "+this.age
+          };
+          document.getElementById("data").innerHTML=person.fullData();
+
+ /*------------------------------   Que.5-----------------------------------------*/
+
+          function data(){
+          a = 5;
+          document.writeln(a);
+          var a; 
+          }
+          data();
+
+/*-------------------------------------------------------------------------*/
+       "use strict";
+        x = 3.14;    
+        console.log(x);
+
+        </script>
+
+    </body>
+
+</html>

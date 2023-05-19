@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <style>
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      
+      th,
+      td {
+        border: 1px solid black;
+      }
+      
+      table.b {
+        table-layout: fixed; 
+        width: 250px;
+      }
+      
+      table.c {
+        table-layout: auto; 
+        width: 100%;
+      }
+      </style>
+
+  </head>
+  <body>
+    <h1>table-layout as fixed and none</h1>
+    <!---->
+
+    <h2>table-layout: fixed; width: 180px:</h2>
+    <table class="b">
+      <!--calling b table from css code-->
+      <tr>
+        <th>Lorem, ipsum.</th>
+        <th>Lorem, ipsum.</th>
+        <th>Lorem, ipsum.</th>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+      </tr>
+    </table>
+
+    <h2>table-layout: auto; width: 100%:</h2>
+    <table class="c">
+      <!--calling c table from css code-->
+      <tr>
+        <th>Lorem, ipsum.</th>
+        <th>Lorem, ipsum.</th>
+        <th>Lorem, ipsum.</th>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+      </tr>
+      <tr>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Lorem, ipsum dolor.</td>
+      </tr>
+    </table>
+  </body>
+</html>

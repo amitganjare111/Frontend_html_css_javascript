@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS EFFECT QUE 3</title>
+    <style>
+        .static {
+            position: static;
+            border: 3px solid #73AD21;
+         } 
+         .relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+         }
+         .fixed {
+            position: fixed;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+         }
+         .absolute {
+            position: absolute;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+         }
+         .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+         }
+    </style>
+</head>
+<body>
+    <h2>position: static</h2>
+    <div class="static">
+        This div element has position: static;
+    </div>
+
+    <h2>position: relative;</h2>
+    <div class="relative">
+        This div element has position: relative;
+    </div>
+        
+    <h2>position: fixed;</h2>
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+
+    <h2>position: absolute;</h2>
+    <div class="absolute">
+        This div element has position: absolute;
+    </div>
+    
+    <div style="margin: 80px 0px 0px 0px">
+    <h2 >position: sticky;</h2>
+    <div class="sticky">
+        I am sticky! 
+    </div>
+     </div>
+</body>
+</html>

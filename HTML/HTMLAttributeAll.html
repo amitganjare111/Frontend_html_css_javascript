@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title> html attribute </title>
+<style>
+        .main{
+            width : 450px;
+            height: 480px;
+            font-size : 20px;
+            background-color: lightblue;
+            border: 8px solid green;
+            padding: 50px;
+            margin: 20px auto 0px auto;
+            text-align:left;
+         }
+         
+         .btn{
+             text-align: center;
+             
+         }
+</style>
+    </head>
+    <body>
+        <form target="_blank">
+            <div class="main">
+                <marquee style="color:fuchsia">This is basic example of marquee</marquee>
+         <fieldset>
+
+           <legend>Registration Form</legend>
+
+            <label for="fname" >FirstName : </label>
+            <input type="text" name="name" value="AMIT" disabled><br>
+
+            <label for="lname" >LastName : </label>
+            <input type="text" name="lname" value="GANJARE" size="20" readonly> <br>
+
+            <label for="email"> email : </label>
+            <input type="email" name="email" placeholder="email" required><br>
+
+            <label for="phonenumber" name="phonenumber">Phone Number</label>
+            <input type="text" name="Mnumber"  maxlength="10"> <br> 
+
+            <label for="birthday">Date of Birth:</label>
+            <input type="date"  name="birthday" autofocus> <br>
+
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" value="male">Male 
+            <input type="radio" name="gender" value="female"/>Female 
+            <input type="radio" name="gender" value="other"/>Other <br>
+
+
+            <LABEL >Select country : </LABEL>
+            <select name="country" id="register country">
+                <option value="India">INDIA</option>
+                <option value="England">England</option>
+                <option value="uk">UK</option>
+                <option value="USA">USA</option>
+            </select> <br> 
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label> <br>
+
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value=""> <br>
+
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"> <br>
+
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth"> <br>
+
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50"> <br>
+
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt"> <br>
+
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week"> <br>
+
+            <label for="password">Password :</label>
+            <input type="password" name="password" value=""/> <br>
+
+            <label for="passsword">Re-enter password</label>
+            <input type="password" name="passsword2" value=""/>
+
+          <div class="btn"> <input type="submit" value="submit"/> </div>
+
+
+         </fieldset>
+         </div>
+        </form>
+    </body>
+</html>

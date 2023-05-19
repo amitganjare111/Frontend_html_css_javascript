@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<title>Form Validation Example</title>
+
+<script>
+  function ValidateContactForm1()
+{
+  var name = document.ContactForm.Name;
+  var email = document.ContactForm.Email;
+    if(name.value=="")
+     {
+       document.getElementById('msg').innerHTML="Required field cannot blank";
+       name.focus();
+      return false;
+    }
+
+    if(email.value.indexOf("@")<1)
+       {
+        document.getElementById('EmailMsg').innerHTML="please enter valid email id";
+        email.focus();
+        return false;
+       }
+     
+     if (email.value.indexOf(".")<1)
+        {
+          document.getElementById('EmailMsg').innerHTML="please enter valid email id";
+          email.focus();
+          return false;
+       }
+  }
+
+function ValidateContactForm()
+{
+    var name = document.ContactForm.Name;
+    var email = document.ContactForm.Email;
+    var phone = document.ContactForm.Telephone;
+    var nocall = document.ContactForm.DoNotCall;
+    var what = document.ContactForm.Subject;
+    var comment = document.ContactForm.Comment;
+
+    if(name.value=="")
+     {
+       document.getElementById('msg').innerHTML="Required field cannot blank";
+       name.focus();
+      return false;
+    }
+
+    if(email.value=="")
+     {
+      document.getElementById('EmailMsg').innerHTML="please enter valid email id";
+       email.focus();
+      return false;
+     }
+         
+     if(email.value.indexOf("@")<1)
+       {
+        document.getElementById('EmailMsg').innerHTML="please enter valid email id";
+        email.focus();
+        return false;
+       }
+     
+     if (email.value.indexOf(".")<1)
+        {
+          document.getElementById('EmailMsg').innerHTML="please enter valid email id";
+          email.focus();
+          return false;
+       }
+     
+      if((phone.value=="")&&(nocall.checked=="false"))
+      
+         {
+         alert("please enter elephone number");
+       }
+     
+       if(what.selectedIndex<1)
+
+      {
+         alert("please select appropriate option");
+       }
+}
+         function EnableDisable(x)
+       {
+           if (x.checked==true)
+{
+             document.ContactForm.Telephone.disabled=true;
+}
+              else{
+              document.ContactForm.Telephone.disabled=false;}
+          }
+
+
+</script>
+</head>
+
+<body>
+
+<form name="ContactForm" >
+    <p>Name: <input type="text" size="65" name="Name" onblur="ValidateContactForm1()"/>
+    <span id="msg"> </span> </p>
+    <p>E-mail Address:  <input type="text" size="65" name="Email" onblur="ValidateContactForm1()"/>
+    <span id="EmailMsg"></span></p>
+    <p>Telephone: <input type="text" size="65" name="Telephone"><br>
+        <input type="checkbox" name="DoNotCall" 
+        onclick="EnableDisable(this);"> Please do not call me.</p>
+    <p>What can we help you with?
+        <select  value="" name="Subject">
+            <option>  </option>
+            <option>Customer Service</option>
+            <option>Question</option>
+            <option>Comment</option>
+            <option>Consultation</option>
+            <option>Other</option>
+        </select></p>
+    <p>Comments:  <textarea cols="55" name="Comment">  </textarea></p>
+    <p><input type="submit" value="Send" name="submit" onclick="ValidateContactForm()">
+    <input type="reset" value="Reset" name="reset"></p>
+</form>
+
+</body>
+</html>

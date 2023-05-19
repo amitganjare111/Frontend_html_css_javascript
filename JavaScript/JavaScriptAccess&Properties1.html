@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> Java Script Access And Properties</title>
+    </head>
+    <body>
+        <button type="button" onclick="show1()">Show!</button>
+         <button type="button" onclick="block1()">Hide!</button>
+
+         <p id="demo">You can open and close this paragraph using the buttons above.</p>
+        <script>
+    var person = new Object();
+   
+   person.firstName = "Amit";
+   person.lastName = "Ganjare"; 
+   person.fullData = function(){
+     return this.firstName+ "  "+this.lastName;
+   };
+    function show1(){
+        person=document.getElementById("demo").innerHTML=person.fullData();
+        person.style.display="person";
+    }
+
+    function block1(){
+        person=document.getElementById("demo")
+        person.style.display="none";
+    }
+        </script>
+    </body>
+</html>

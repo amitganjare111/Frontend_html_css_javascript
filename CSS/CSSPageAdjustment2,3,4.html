@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PAGE ADJUSTMENT QUESTION 2</title>
+    <style>
+        html {
+          scroll-behavior: smooth;
+         }
+
+        .a{
+            visibility:visible;
+            text-align: center;
+        }
+        .b{
+            visibility:hidden;
+            text-align: center;
+        }
+        .c{
+            visibility:collapse;
+            text-align: center;
+        }
+        .d {display: none; color:red;}
+        .e {display: inline; color: red;}
+        .f {display: block; color: red;}
+        .g {display: inline-block; color: red;}
+
+        .forDiv{
+            border: 1px solid;
+        }
+
+        /*Floating Back-To-Top Button*/
+    #myBtn {
+        position:fixed;
+        max-width: 300px;
+        font-size: 14px;
+        border-color: rgba(26, 24, 24, 0.2);
+        border-radius: 4px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        right: 10px;
+        bottom: 10px;
+        background: #149ddd;
+        color: #fff;
+    }
+/*On Hover Color Change*/
+    #myBtn:hover {
+        background-color: #f1857d;
+    }
+
+    #myBtn2{
+        float: right;
+        max-width: 300px;
+        font-size: 14px;
+        border-color: rgba(26, 24, 24, 0.2);
+        border-radius: 4px;
+        width: 60px;
+        height: 40px;
+        border-radius: 50px;
+        right: 10px;
+        bottom: 10px;
+        background: #149ddd;
+        color: #fff;
+        margin-bottom:60px;
+    }
+
+     #myBtn2:hover {
+        background-color: #f1857d;
+    }
+
+    #section2 {
+         height: 600px;
+         background-color: pink;
+}
+    </style>
+</head>
+<body>
+    
+    <button id="myBtn2"><a href="#bottom" style="color: rgb(250, 241, 241)">Bottom</a></button>
+
+    <div>
+        <h1 style="background-color: aqua;  text-align: center;">Apply different Visibility on Elements</h1>
+
+        <h2 class="a">visible property apply on this Heading</h2>
+
+        <h3 class="b">Hidden property apply on this Heading</h3>
+
+        <h4 class="c">Collapse property apply on this Heading</h4>
+    </div>
+
+    <div>
+        <h1 style="background-color: aqua;  text-align: center;">The display Property</h1>
+
+<h2 style="text-align: center;">display: none:</h2>
+<div class="forDiv">
+<p>JALA Academy was set up with a vision to fill the gaps between academic education and the practical IT world in the current industry. We believe that every serious job seeker has the capability to get a high-paying Software Job. We strive to bring out the best through<p class="d">SKILL</p> enhancement techniques and with<p class="d"> ZERO </p>dependencies on the Trainers.</p>
+</div>
+
+<h2 style="text-align: center;">display: inline:</h2>
+<div class="forDiv">
+    <p>JALA Academy was set up with a vision to fill the gaps between academic education and the practical IT world in the current industry. We believe that every serious job seeker has the capability to get a high-paying Software Job. We strive to bring out the best through<p class="e">SKILL</p> enhancement techniques and with<p class="e"> ZERO </p>dependencies on the Trainers.</p>
+</div>
+
+<h2 style="text-align: center;">display: block:</h2>
+<div class="forDiv">
+    <p>JALA Academy was set up with a vision to fill the gaps between academic education and the practical IT world in the current industry. We believe that every serious job seeker has the capability to get a high-paying Software Job. We strive to bring out the best through<p class="f">SKILL</p> enhancement techniques and with<p class="f"> ZERO </p>dependencies on the Trainers.</p>
+</div>
+
+<h2 style="text-align: center;">display: inline-block:</h2>
+<div class="forDiv" id="bottom">
+    <p>JALA Academy was set up with a vision to fill the gaps between academic education and the practical IT world in the current industry. We believe that every serious job seeker has the capability to get a high-paying Software Job. We strive to bring out the best through<p class="g">SKILL</p> enhancement techniques and with<p class="g"> ZERO </p>dependencies on the Trainers.</p>
+</div>
+ </div>
+ <div id="section2">
+       <h2>Section 2</h2>
+  </div>
+        
+    <button id="myBtn"><a href="#top" style="color: white">Top</a></button>
+</body>
+</html>
